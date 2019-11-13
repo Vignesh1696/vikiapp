@@ -21,7 +21,7 @@
       <input id="txt" autocomplete="off" autofocus="on" oninput="isTyping()" placeholder="type your message here..." /><button>Send</button>
     </form>
     <script>
-            var socket = io.connect(process.env.PORT);
+            var socket = io.connect('process.env.PORT' || 'http://localhost:8080');
                             
 
 
