@@ -21,8 +21,10 @@
       <input id="txt" autocomplete="off" autofocus="on" oninput="isTyping()" placeholder="type your message here..." /><button>Send</button>
     </form>
     <script>
-            var socket = io.connect(process.env.PORT || 'http://localhost:8080');
-                            
+           // var socket = io.connect(process.env.PORT || 'http://localhost:8080');
+                           var socket = io.listen(process.env.PORT);
+
+
 
 
             // submit text message without reload/refresh the page
