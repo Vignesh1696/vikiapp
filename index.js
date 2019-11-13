@@ -22,7 +22,6 @@ io.sockets.on('connection', function(socket) {
     });
 
 });
-socket = io.listen(process.env.PORT);
 
 
 const server = http.listen(process.env.PORT || 3000, function(){
